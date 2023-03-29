@@ -13,9 +13,6 @@
 
 </head>
 <style>
-   
-    
-    
     #bg {
         background-image: url('img/background.jpg');
         position: fixed;
@@ -122,24 +119,29 @@
 
 
     <!--formulario de login-->
-    <form>
-        
-        <div class="text-center mb-4">
-            <h3>Bienvenido de nuevo</h3>
+    <div class="cont text-center">
+        <div>
+            <img src="img/logo.png">
         </div>
-        <div class="form-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Nombre de usuario" required>
-        </div>
-        <div class="form-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña" required>
-        </div>
-        <div class="form-field">
-            <button class="btn" type="submit">Iniciar Sesión</button>
-        </div>
-    </form>
+        <form class="formulario" method="post" action="login.php">
 
+            <div class="text-center mb-4">
+                <h3>Bienvenido de nuevo</h3>
+            </div>
+            <div class="form-group ">
+                
+                <input type="text" name="usuario" placeholder="Usuario">
+            </div>
+            <div class="form-group mb-3">
+                <label></label>
+                <input type="password" name="contrasena" placeholder="Contraseña">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </form>
+        <!--Fin formulario-->
+    </div>
 </body>
 
 </html>
