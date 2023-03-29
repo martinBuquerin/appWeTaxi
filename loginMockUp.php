@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-LjB5g/K1Cjq0L8fyV4+IweoJ7pCUc0KlUKbxTynT+9kaTJpdX9tTFDkVvAzhu1M+" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.png">
 
 </head>
 <style>
-    /*Esto no funciona, hay que arreglarlo para mostrar los iconos correspondientes
-    @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-    */
+   
+    
+    
     #bg {
         background-image: url('img/background.jpg');
         position: fixed;
@@ -57,18 +56,18 @@
         background-repeat: no-repeat;
     }
 
-    form .form-field:nth-child(1)::before {
-        background-image: url(img/user-icon.png);
-        width: 20px;
-        height: 20px;
-        top: 15px;
+    .form-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
     }
 
-    form .form-field:nth-child(2)::before {
-        background-image: url(img/lock-icon.png);
-        width: 16px;
-        height: 16px;
+    .form-field i {
+        margin-right: 10px;
     }
+
+
+
 
     form .form-field {
         display: -webkit-box;
@@ -122,22 +121,20 @@
 <body>
 
 
-
+    <!--formulario de login-->
     <form>
-        <div class="images" style=" margin-left:-16px;margin-right: 300px;">
-            <img src="img/logo.png" width="400" height="180">
-        </div>
+        
         <div class="text-center mb-4">
             <h3>Bienvenido de nuevo</h3>
         </div>
         <div class="form-field">
-            <input type="text" placeholder="Nombre de usuario" required />
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombre de usuario" required>
         </div>
-
         <div class="form-field">
-            <input type="password" placeholder="Contraseña" required />
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Contraseña" required>
         </div>
-
         <div class="form-field">
             <button class="btn" type="submit">Iniciar Sesión</button>
         </div>
